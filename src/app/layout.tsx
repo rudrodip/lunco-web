@@ -2,6 +2,7 @@ import { Open_Sans } from "next/font/google";
 import localFont from "next/font/local";
 import { cn } from "@/lib/utils";
 import { Providers } from "@/components/nextui-provider";
+import StarCanvas from "@/components/three-scenes/star-canvas";
 
 import { siteConfig } from "@/config/site";
 import "@/styles/globals.css";
@@ -24,11 +25,7 @@ export const metadata = {
   description: siteConfig.description,
   keywords: siteConfig.keywords,
   authors: [siteConfig.creator],
-  creator: siteConfig.creator.name,
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "white" },
-    { media: "(prefers-color-scheme: dark)", color: "black" },
-  ],
+  creator: siteConfig.creator.name, 
   openGraph: {
     title: siteConfig.name,
     description: siteConfig.description,
@@ -91,6 +88,7 @@ export default async function RootLayout({
         )}
       >
         <div className="main">
+          <StarCanvas />
           <div className="gradient" />
         </div>
         <Providers>{children}</Providers>
