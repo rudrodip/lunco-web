@@ -4,8 +4,8 @@ export const siteConfig: SiteConfig = {
   name: "LunCo",
   description:
   "LunCo is a open-source simulation tool designed for planning space missions, with a focus on lunar settlements. Built with the powerful Godot 4 engine, LunCo aims to revolutionize the way space engineers design and collaborate on complex systems.",
-  url: "https://lunco.space",
-  ogImage: "https://lunco.space/og.png",
+  url: "https://lunco.vercel.app",
+  ogImage: "https://lunco.vercel.app/og.png",
   creator: {
     name: "Rod Mamin",
     url: "https://twitter.com/_Difint_",
