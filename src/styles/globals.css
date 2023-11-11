@@ -5,7 +5,7 @@
 @layer base {
   :root {
     --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --foreground: 180 40% 90%;
 
     --card: 222.2 84% 4.9%;
     --card-foreground: 210 40% 98%;
@@ -41,6 +41,16 @@
     --grad7: 343, 68%, 79%;
 
     --radius: 0.5rem;
+
+    --shine-degree: 120deg;
+    --shine-color: rgba(8, 212, 202, 0.3);
+    --shine-effect: linear-gradient(
+      var(--shine-degree),
+      transparent,
+      hsl(var(--primary)),
+      transparent
+    );
+    --shine-transition: all 0.5s ease-in-out;
   }
 }
 
@@ -215,16 +225,37 @@
   }
 }
 
+.border-gradient {
+  border: 0.2px solid;
+  border-image-slice: 1;
+  border-width: 0.2px;
+}
+
+.border-gradient-primary {
+  border-image-source: linear-gradient(to left, transparent, rgba(8, 212, 202, 0.1), rgba(8, 212, 202, 0.3), rgba(8, 212, 202, 0.1), transparent);
+}
+
+.border-gradient-primary-full {
+  border-image-source: linear-gradient(to left, rgba(8, 212, 202, 0.5), rgba(8, 212, 168, 0.5));
+}
+
+.only-bottom {
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+}
+
+
 .app {
-  @apply relative flex justify-center items-center flex-col w-full max-w-7xl mx-auto lg:mx-auto;
+  @apply relative flex items-center flex-col w-full mx-auto lg:mx-auto;
 }
 
 .head-text {
-  @apply my-5 text-5xl font-extrabold font-heading leading-[1.15] sm:text-7xl;
+  @apply my-5 text-5xl font-extrabold font-heading leading-[1.15] sm:text-8xl;
 }
 
-.blue-gradient {
-  @apply bg-gradient-to-r from-sky-500 to-teal-500 bg-clip-text text-transparent;
+.primary-gradient {
+  @apply bg-gradient-to-r from-cyan-500 to-teal-500 bg-clip-text text-transparent;
 }
 
 .desc {
@@ -245,8 +276,4 @@
 
 .flex-between {
   @apply flex justify-between items-center;
-}
-
-.bounce-emoji {
-  @apply animate-bounce;
 }
