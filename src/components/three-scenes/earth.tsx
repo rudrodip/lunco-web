@@ -2,7 +2,7 @@
 
 import { Canvas, useLoader } from "@react-three/fiber";
 import { useRef } from "react";
-import { useScroll } from "framer-motion";
+import { useScroll, useSpring } from "framer-motion";
 import { TextureLoader } from "three";
 import { motion } from "framer-motion-3d";
 
