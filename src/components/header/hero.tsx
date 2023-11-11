@@ -19,7 +19,7 @@ export default function Hero() {
         Full-cycle space operations simulation tool for industrial applications
         and enthusaists alike
       </p>
-      <div className="flex justify-center items-center">
+      <div className="mt-6 lg:mt-10 flex justify-center items-center">
         <h1 className="hidden lg:block font-heading tracking-wider leading-relaxed text-8xl lg:text-9xl text-justify">
           Build with&nbsp;
         </h1>
@@ -37,7 +37,7 @@ const BigLogo = () => {
   return (
     <section
       id="big-logo"
-      className="my-6 lg:my-10 flex justify-center items-center"
+      className="flex justify-center items-center"
     >
       <h1 className="font-heading tracking-wider leading-relaxed text-8xl lg:text-9xl text-justify primary-gradient">
         LunC

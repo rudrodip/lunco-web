@@ -116,7 +116,7 @@
   background-image: radial-gradient(
     ellipse at center,
     transparent 40%,
-    hsl(var(--primary)) 170%
+    hsl(var(--primary)) 250%
   );
   background-size: 100% 100%;
   transition: all 0.3s ease-in-out;
@@ -209,7 +209,7 @@
 
 .shine-anim {
   &::before {
-    animation: shine 3s ease-in-out infinite;
+    animation: shine 8s ease-in-out infinite;
   }
 }
 
@@ -218,7 +218,7 @@
     left: -100%;
     transition-property: left;
   }
-  20%,
+  10%,
   100% {
     left: 100%;
     transition-property: left;
