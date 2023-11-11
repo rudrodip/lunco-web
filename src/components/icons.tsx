@@ -81,8 +81,8 @@ export const Icons = {
       ></path>
     </svg>
   ),
-  logo: ({ ...props }: LucideProps) => (
-    <Image src="/logo/lunco.png" alt="favicon" width={30} height={30} />
+  logo: ({ width = 30, height = 30 }: { width?: number, height?: number }) => (
+    <Image src="/logo/lunco.png" alt="favicon" width={width} height={height} />
   ),
   twitter: Twitter,
   check: Check,
