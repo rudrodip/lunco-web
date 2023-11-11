@@ -40,13 +40,13 @@ export const metadata = {
       },
     ],
     type: "website",
-    locale: "bn_BD",
+    locale: "en_US",
   },
 
   // Twitter metadata
   twitter: {
     card: "summary_large_image",
-    site: "@rds_agi",
+    site: "@LunCoSim",
     title: siteConfig.name,
     description: siteConfig.description,
     image: {
