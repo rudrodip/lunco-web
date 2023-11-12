@@ -33,12 +33,7 @@
     --ring: 224.3 76.3% 48%;
 
     --grad1: 215, 98%, 61%;
-    --grad2: 125, 98%, 72%;
-    --grad3: 354, 98%, 61%;
-    --grad4: 256, 96%, 67%;
-    --grad5: 38, 60%, 74%;
-    --grad6: 222, 67%, 73%;
-    --grad7: 343, 68%, 79%;
+    --grad2: 222, 67%, 73%;
 
     --radius: 0.5rem;
 
@@ -57,6 +52,7 @@
 @layer base {
   * {
     @apply border-border;
+    scroll-behavior: smooth;
   }
   body {
     @apply bg-background text-foreground;
@@ -97,12 +93,7 @@
       hsl(var(--grad1)) 0px,
       transparent 0%
     ),
-    radial-gradient(at 97% 21%, hsl(var(--grad2)) 0px, transparent 50%),
-    radial-gradient(at 52% 99%, hsl(var(--grad3)) 0px, transparent 50%),
-    radial-gradient(at 10% 29%, hsl(var(--grad4)) 0px, transparent 50%),
-    radial-gradient(at 97% 96%, hsl(var(--grad5)) 0px, transparent 50%),
-    radial-gradient(at 33% 50%, hsl(var(--grad6)) 0px, transparent 50%),
-    radial-gradient(at 79% 53%, hsl(var(--grad7)) 0px, transparent 50%);
+    radial-gradient(at 52% 99%, hsl(var(--grad2)) 0px, transparent 50%);
   position: absolute;
   content: "";
   width: 100%;
