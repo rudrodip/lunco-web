@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section id="hero" className="max-x-7xl my-5 lg:my-16 mx-2 lg:mx-0">
+    <section id="hero" className="max-x-7xl my-5 mx-2 lg:mx-0">
       <Link
         href="/#support"
         className="flex flex-col items-center justify-center"
@@ -15,35 +15,35 @@ export default function Hero() {
           </div>
         </div>
       </Link>
-      <p className="text-md text-center text-secondary-foreground/60">
-        Full-cycle space operations simulation tool for industrial applications
-        and enthusaists alike
-      </p>
-      <div className="mt-6 lg:mt-10 flex justify-center items-center">
-        <h1 className="hidden lg:block font-heading tracking-wider leading-relaxed text-8xl lg:text-9xl text-justify">
-          Build with&nbsp;
-        </h1>
-        <BigLogo />
-      </div>
-      <h1 className="text-lg lg:text-xl max-w-7xl text-center">
+      <h1 className="text-lg lg:text-lg max-w-7xl text-center">
         We create an open source software for{" "}
         <span className="primary-gradient">Lunar colony engineering</span>
       </h1>
+      <div className="mt-5 flex justify-center items-center">
+        <h1 className="hidden lg:block font-heading tracking-wider leading-relaxed text-7xl lg:text-8xl text-justify">
+          Simulate with&nbsp;
+        </h1>
+        <BigLogo />
+      </div>
+      <p className="text-md text-center">
+        Full-cycle space operations simulation tool for industrial applications
+        and enthusaists alike
+      </p>
     </section>
   );
 }
 
 const BigLogo = () => {
-  return (
+  return (  
     <section
       id="big-logo"
       className="flex justify-center items-center"
     >
-      <h1 className="font-heading tracking-wider leading-relaxed text-8xl lg:text-9xl text-justify primary-gradient">
+      <h1 className="font-heading tracking-wider leading-relaxed text-8xl lg:text-8xl text-justify primary-gradient">
         LunC
       </h1>
       <div className="flex -translate-y-2">
-        <Icons.logo width={100} height={100} />
+        <Icons.logo width={75} height={75} />
       </div>
     </section>
   );
