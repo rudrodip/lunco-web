@@ -1,15 +1,13 @@
 import Hero from "@/components/header/hero";
-import dynamic from "next/dynamic";
-import { Spinner } from "@nextui-org/react";
-
-const DynamicEarth = dynamic(() => import("@/components/three-scenes/earth"), {
-  loading: () => <span className="flex justify-center items-center"><Spinner /></span>
-});
+import Feature from "@/components/features/feature-container";
+import Vision from "@/components/vision/vision";
 
 export default function App() {
   return (
-    <main className="min-h-screen">
+    <main className="">
       <Hero />
+      <Vision />
+      <Feature />
     </main>
   );
 }
