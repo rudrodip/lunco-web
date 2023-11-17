@@ -82,7 +82,7 @@ export const Icons = {
     </svg>
   ),
   logo: ({ width = 30, height = 30 }: { width?: number, height?: number }) => (
-    <Image src="/logo/lunco.png" alt="favicon" width={width} height={height} />
+    <Image src="/logo/lunco.png" alt="favicon" width={width} height={height} priority={true} />
   ),
   twitter: Twitter,
   check: Check,
