@@ -25,7 +25,7 @@ export const metadata = {
   description: siteConfig.description,
   keywords: siteConfig.keywords,
   authors: [siteConfig.creator],
-  creator: siteConfig.creator.name, 
+  creator: siteConfig.creator.name,
   openGraph: {
     title: siteConfig.name,
     description: siteConfig.description,
@@ -66,7 +66,7 @@ export const metadata = {
     image: {
       url: siteConfig.ogImage,
       width: 1200,
-      height: 600,
+      height: 630,
       alt: siteConfig.name,
     },
   },
