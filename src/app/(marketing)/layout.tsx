@@ -23,7 +23,7 @@ export default async function MarketingLayout({
             </span>
           </Link>
           <MainNav items={marketingConfig.mainNav} />
-          <a href={siteConfig.links.github} target="_blank" className="shine shine-anim border border-primary bg-transparent btn-gradient rounded-lg px-2 py-1 text-sm">Try LunCo</a>
+          <a href="https://alpha.lunco.space" target="_blank" className="shine shine-anim border border-primary bg-transparent btn-gradient rounded-lg px-2 py-1 text-sm">Try LunCo</a>
         </div>
       </header>
       <main className="flex-1 app overflow-x-hidden">{children}</main>
