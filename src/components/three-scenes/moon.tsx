@@ -14,7 +14,7 @@ function MoonScene() {
     offset: ["start end", "end start"],
   });
 
-  const smooth = useSpring(scrollYProgress);
+  const smooth = useSpring(scrollYProgress, { damping: 20, stiffness: 100 });
   const size = useTransform(smooth, [0, 1], [2, 3.2]);
 
   const [color, normal, aoMap] = useLoader(TextureLoader, [
@@ -39,7 +39,7 @@ function MoonScene() {
 
 const Moon = () => {
   return (
-    <div className="w-full h-auto absolute inset-0 z-[-1]">
+    <div className="w-[100vw] h-auto absolute inset-0 z-[-1]">
       <MoonScene />
     </div>
   );
