@@ -7,11 +7,10 @@ export default function Feature() {
       <div>
         <h1 className="head-text primary-gradient">Features</h1>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-5">
-        {features
-          .map((feature, i) => {
-            return <FeatureCard key={i} feature={feature} />;
-          })}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-3 my-5">
+        {features.map((feature, i) => {
+          return <FeatureCard key={i} feature={feature} />;
+        })}
       </div>
     </section>
   );
