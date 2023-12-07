@@ -16,7 +16,7 @@ async function getpageFromParams(params: { slug: string }) {
   return doc;
 }
 
-export default async function ContactPage() {
+export default async function Documentation() {
   const doc = await getpageFromParams({ slug: "main-doc" });
 
   if (!doc) {
@@ -33,10 +33,7 @@ export default async function ContactPage() {
         </div>
       </div>
       <div className="mx-auto w-full min-w-0">
-        <MdxHeaderAnimation 
-          title={doc.title}
-          description={doc.description}
-        />
+        <MdxHeaderAnimation title={doc.title} description={doc.description} />
         <Mdx code={doc.body.code} />
         <hr className="my-4 md:my-6" />
       </div>
