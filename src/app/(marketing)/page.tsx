@@ -1,13 +1,20 @@
 import Hero from "@/components/header/hero";
-import Feature from "@/components/features/feature-container";
-import Vision from "@/components/vision/vision";
+import dynamic from "next/dynamic";
+
+const DynamicVision = dynamic(() => import("@/components/vision/vision"), {
+  loading: () => <></>,
+});
+const DynamicFeature = dynamic(
+  () => import("@/components/features/feature-container"),
+  { loading: () => <></> }
+);
 
 export default function App() {
   return (
     <main className="">
       <Hero />
-      <Vision />
-      <Feature />
+      <DynamicVision />
+      <DynamicFeature />
     </main>
   );
 }
