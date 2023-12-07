@@ -16,7 +16,7 @@ export default function Hero() {
           </div>
         </div>
       </Link>
-      <h1 className="text-lg lg:text-lg max-w-7xl text-center my-5">
+      <h1 className="text-lg lg:text-lg text-center my-5">
         We create an open source software for{" "}
         <span className="primary-gradient">Lunar colony engineering</span>
       </h1>
@@ -30,7 +30,7 @@ export default function Hero() {
         Full-cycle space operations simulation tool for industrial applications
         and enthusaists alike
       </p> */}
-      <div className="relative">
+      <div className="relative flex justify-center items-center">
         <div className="absolute top-0 left-0 container mx-auto -translate-y-[50%]"></div>
         <HeaderVideo />
       </div>
