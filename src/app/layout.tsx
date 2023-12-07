@@ -26,6 +26,14 @@ export const metadata = {
   keywords: siteConfig.keywords,
   authors: [siteConfig.creator],
   creator: siteConfig.creator.name,
+  images: [
+    {
+      url: siteConfig.ogImage,
+      width: 800,
+      height: 600,
+      alt: siteConfig.name,
+    },
+  ],
   openGraph: {
     title: siteConfig.name,
     description: siteConfig.description,
